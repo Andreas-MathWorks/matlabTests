@@ -3,7 +3,7 @@ on: [push]
 jobs:
   my-job:
     name: Run MATLAB Tests
-    runs-on: self-hosted
+    runs-on: [self-hosted, Windows, x64]
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
